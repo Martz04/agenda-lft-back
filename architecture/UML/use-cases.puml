@@ -1,0 +1,25 @@
+@startuml
+skinparam actoryStyle awesome
+left to right direction
+actor Fisioterapeuta as f
+actor Doctor as d
+actor Paciente as p
+package "Agenda LFT" {
+ usecase "Horario de LFT" as UC1
+ usecase "Registrar vacaciones" as UC2
+ usecase "Confirmar terapia" as UC3
+ usecase "Rechazar terapia" as UC4
+ usecase "Crear Cita" as UC5
+ usecase "Reagendar Terapeuta" as UC6
+}
+
+UC1 <|-- UC2
+UC5 <|-- UC6
+f --> UC1
+f --> UC2
+f --> UC3
+f --> UC4
+d --> UC5
+d --> UC1
+p --> UC5
+@enduml
