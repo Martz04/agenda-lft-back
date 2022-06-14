@@ -46,6 +46,8 @@ De tal manera que el doctor y el paciente tengan conocimiento de la cancelacion.
 * Doctor
 * Paciente
 
+![use-cases](/architecture/UML/use-cases.png)
+
 ## Initial Conversation 25/05/2022
 
 Necesito una agenda para otorgar citas en bloque personalizable a número de sesiones y por días de la semana por terapeuta (son como 10 de turno matutino e igual vespertino)
