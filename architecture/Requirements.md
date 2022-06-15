@@ -1,6 +1,31 @@
+## Conversacion Inicial 25/05/2022
+
+Necesito una agenda para otorgar citas en bloque personalizable a número de sesiones y por días de la semana por terapeuta (son como 10 de turno matutino e igual vespertino)
+
+Por ejemplo Mario da terapia de mano lunes y jueves, de pie martes y viernes pero de rodilla no. Le mandan un paciente que necesita 10 sesiones de pie. y despues le mandan otro paciente de 30 sesiones de mano.
+
+Mario esta disponible en horario matutino.
+El horario es configurable por parte del paciente
+* Algunos de 7:00 am - 3:00 pm
+* Otros de 8:00 am - 2:00 pm
+* Otros de 1:00 pm - 7:00 pm
+
+Si Mario está a tope de 7 a 10, pues a ver si se puede de 11 a 2 que sale
+Pero que tal que el 29 de septiembre no trabaja, si hay otro terapeuta disponible que hace terapia de mano se asigna.
+Aunque si no lo decide el administrador se bloquea la agenda.
+
+Los LTF registran sus dias de vacaciones.
+El administrador registra los dias de vacaciones.
+
+Todas las terapias tienen la misma duracion (1Hr).
+
+Hay grupos de Terapias
+Un grupo es cuando hay varios pacientes en el mismo horario con un solo LFT.
 
 # Requerimientos Funcionales
 Aplicacion que permite al Doctor y Administradores agendar citas a sus pacientes para ser tratador por un fisioterapeuta.
+
+![use-cases](/architecture/UML/use-cases.png)
 
 ## UC1: Horario de LFT
 Como Administrador, Doctor o LFT,
@@ -45,29 +70,3 @@ De tal manera que el doctor y el paciente tengan conocimiento de la cancelacion.
 * LTF Fisioterapeuta
 * Doctor
 * Paciente
-
-![use-cases](/architecture/UML/use-cases.png)
-
-## Initial Conversation 25/05/2022
-
-Necesito una agenda para otorgar citas en bloque personalizable a número de sesiones y por días de la semana por terapeuta (son como 10 de turno matutino e igual vespertino)
-
-Por ejemplo Mario da terapia de mano lunes y jueves, de pie martes y viernes pero de rodilla no. Le mandan un paciente que necesita 10 sesiones de pie. y despues le mandan otro paciente de 30 sesiones de mano.
-
-Mario esta disponible en horario matutino.
-El horario es configurable por parte del paciente
-* Algunos de 7:00 am - 3:00 pm
-* Otros de 8:00 am - 2:00 pm
-* Otros de 1:00 pm - 7:00 pm
-
-Si Mario está a tope de 7 a 10, pues a ver si se puede de 11 a 2 que sale
-Pero que tal que el 29 de septiembre no trabaja, si hay otro terapeuta disponible que hace terapia de mano se asigna.
-Aunque si no lo decide el administrador se bloquea la agenda.
-
-Los LTF registran sus dias de vacaciones.
-El administrador registra los dias de vacaciones.
-
-Todas las terapias tienen la misma duracion (1Hr).
-
-Hay grupos de Terapias
-Un grupo es cuando hay varios pacientes en el mismo horario con un solo LFT.
